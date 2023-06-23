@@ -134,11 +134,3 @@ jobs:
       with:
         name: ${{ env.release_name }}
         path: ./openwrt/bin/targets/rockchip/armv8/*
-    - name: Create Release
-      uses: ncipollo/release-action@v1
-      with:
-        artifacts: ./openwrt/bin/targets/rockchip/armv8/*
-        name: ${{ env.release_name }}
-        tag: ${{ env.compile_date }}
-        commit: ${{ env.commit_id }}
-        bodyFile: ./DESC.md
