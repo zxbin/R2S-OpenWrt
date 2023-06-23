@@ -142,4 +142,3 @@ jobs:
         tag: ${{ env.compile_date }}
         commit: ${{ env.commit_id }}
         bodyFile: ./DESC.md
-        token: ${{ secrets.GITHUB_TOKEN }}
